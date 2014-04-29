@@ -10,3 +10,4 @@ Commands:
         Feed a player: /feed [player]
         
 Permissions: Comming soon.
+*
