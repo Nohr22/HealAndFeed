@@ -1,0 +1,14 @@
+name: ${project.artifactId}
+main: com.nohr22.healandfeed.HealAndFeed
+version: ${project.version}
+author: [Nohr22]
+description: Heal and Feed!
+
+commands:
+    heal:
+        usage: /<command>
+        description: Heal a player!
+
+    feed:
+        usage: /<command>
+        description: Feed a player!
