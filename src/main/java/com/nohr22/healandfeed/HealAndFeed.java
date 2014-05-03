@@ -33,12 +33,12 @@ public class HealAndFeed extends JavaPlugin {
             }
             Player target = Bukkit.getServer().getPlayer(args[0]);
             if (target == null){
-                p.sendMessage(ChatColor.RED + "Could not find player " + args[0] + ".");
+                p.sendMessage(ChatColor.RED + "Could not find player " + args[0] + "!");
                 return true;
             }
             target.setHealth(20.0);
             target.setFoodLevel(20);
-            target.sendMessage(ChatColor.GREEN + "You have been healed by " + p.getName() + ".");
+            target.sendMessage(ChatColor.GREEN + "You have been healed by " + p.getName() + "!");
             p.sendMessage(ChatColor.GREEN + target.getName() + " has been healed!");
         }
         if (cmd.getName().equalsIgnoreCase("feed")) {
@@ -49,11 +49,11 @@ public class HealAndFeed extends JavaPlugin {
             }
             Player target = Bukkit.getServer().getPlayer(args[0]);
             if (target == null){
-                p.sendMessage(ChatColor.RED + "Could not find player " + args[0] + ".");
+                p.sendMessage(ChatColor.RED + "Could not find player " + args[0] + "!");
                 return true;
             }
             target.setFoodLevel(20);
-            target.sendMessage(ChatColor.GREEN + "You have been fed by " + p.getName() + ".");
+            target.sendMessage(ChatColor.GREEN + "You have been fed by " + p.getName() + "!");
             p.sendMessage(ChatColor.GREEN + target.getName() + " has been fed!");
         }
         return true;
