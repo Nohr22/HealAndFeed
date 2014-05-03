@@ -44,7 +44,7 @@ public class HealAndFeed extends JavaPlugin {
         if (cmd.getName().equalsIgnoreCase("feed")) {
             if (args.length == 0) {
                 p.setFoodLevel(20);
-                p.sendMessage(ChatColor.GREEN + "You have been fed.");
+                p.sendMessage(ChatColor.GREEN + "You have been fed!");
                 return true;
             }
             Player target = Bukkit.getServer().getPlayer(args[0]);
